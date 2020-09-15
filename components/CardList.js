@@ -1,5 +1,6 @@
-import React from 'react';
 import Card from './Card';
+import Link from 'next/link';
+
 
 const CardList = ({ robots }) => {
   return (
@@ -7,12 +8,15 @@ const CardList = ({ robots }) => {
       {
         robots.map((user, i) => {
           return (
+            <Link key={i} href="/robots/[id]" as={`/robots/${user.id}`} >
+              <a >
             <Card
-              key={i}
               id={robots[i].id}
               name={robots[i].name}
               email={robots[i].email}
               />
+              </a>
+              </Link>
           );
         })
       }

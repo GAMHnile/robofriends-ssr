@@ -1,4 +1,4 @@
-import React, {Component} from 'react';
+import {Component} from 'react';
 import CounterButton from './CounterButton';
 
 // In most cases, instead of writing shouldComponentUpdate()
