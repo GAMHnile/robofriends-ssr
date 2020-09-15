@@ -1,3 +1,4 @@
+import '../styles/tachyons.min.css';
 import '../styles/globals.css'
 
 function MyApp({ Component, pageProps }) {
